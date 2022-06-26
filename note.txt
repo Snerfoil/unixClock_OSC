@@ -1,0 +1,34 @@
+so b/c not many ppl were eating up arceus's preggo ass. (no idea if its because ppl werent intrested, or its because of the fact I released it mid month, or... I told them i'd b out of town and they are polietly waiting for me to come back. how nice?)
+
+either way I get bored during my down time and dispite the fine wines I did something a little sacraligous: doing a thing in VRC. okay I know I still refraining from even touching this game, but at this point my vigalant "boycot" was very much not taken seriously by my own followers, prolly because the alternatives I was promoting were either boring or just really difficult to get into. and admititly now that vrc is slowly... addressing their long standing issues im starting to look like the idiot here. and frankly, I kinda miss VRC a bit. I'll be looking forward to October to give it a proper assesment and to maybe meetup with some ppl idk.
+
+oh, but what is this thing im doing here? uuuh in a curious effort to derp with Rust, which is now the talk of IT town, I desided to write an OSC compatible handler for driving the arceus's rings. I did it once in python this trip but then I repeated it in rust. it works, I think, but i'd need to check if it puppeteers the rings correctly. ima make use of chucklenutz failed arceus port to debug that shit.
+
+I wouldn't call this rust thingy really properly done as I did it in a stupid way but it does the trick and b/c I inentionally have it do its thing once every second, the slight inificienes dont rily matter much.
+
+anyway
+the jist is that the rings on arceus's back are meant to be animation with this thing. basically each ring spins around 360deg in this order
+
+ringMin  ->
+ringSec  <-
+ringHr   ->
+
+ringWeek   ->
+ringDay    <-
+ringMonth  ->
+
+ringDecade  <-
+ringYear    ->
+ringCentury <-
+
+ringUnix  <-
+
+(this is looking at the rings from the back top is outer most, bottom is that inner yin-yag symbol, the bones are also named the same).
+
+each ring just needs two keyframes, linearly interpolated doing a 360deg spin in said direction. controled by the respective animator expression, parameter... thingy you know what I mean.
+
+dont forget the compiled exe lives at ./target/debug/vrc_handle.exe
+
+so I figured my implementation of the clock parser was wrong, tbf I only tested the rust version, I should check this against my python version to see if I am bad at rust OR just programing in general. either way, its late so ima do this later.
+
+ight it works now. and all I need to do is shoot the EXE to the mega repo.

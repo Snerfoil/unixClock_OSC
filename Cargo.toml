@@ -1,0 +1,10 @@
+[package]
+name = "unixClock_OSC"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+# https://github.com/klingtnet/rosc
+
+[dependencies]
+rosc = "~0.7"
