@@ -41,7 +41,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "vrc_handle"
+name = "unixClock_OSC"
 version = "0.1.0"
 dependencies = [
  "rosc",
